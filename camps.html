@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ducato Wrestling camps and clinics in the Mankato, Minnesota and Carpentersville, Illinois areas.">
+  <title>Camps & Clinics | Ducato Wrestling</title>
+
+  <style>
+    :root {
+      --navy: #0B1F3A;
+      --orange: #F97316;
+      --light: #F3F5F8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--navy);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      padding: 20px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .brand {
+      color: white;
+      font-size: 24px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .brand span { color: var(--orange); }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--orange);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0B1F3A, #183B65);
+      color: white;
+      text-align: center;
+      padding: 95px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+
+    .hero h1 span { color: var(--orange); }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    section { padding: 75px 8%; }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .center { text-align: center; }
+
+    h2 {
+      font-size: 32px;
+      text-transform: uppercase;
+      margin: 0 0 20px;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    .light { background: var(--light); }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: white;
+      padding: 32px 25px;
+      border-radius: 8px;
+      border-top: 5px solid var(--orange);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 23px;
+    }
+
+    .locations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .location {
+      background: white;
+      padding: 30px;
+      border-left: 5px solid var(--orange);
+      border-radius: 8px;
+    }
+
+    .location h3 { margin-top: 0; }
+
+    .coming-soon {
+      max-width: 750px;
+      margin: 30px auto 0;
+      padding: 40px 25px;
+      border: 2px solid var(--orange);
+      border-radius: 10px;
+    }
+
+    .coming-soon h3 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 14px 28px;
+      border-radius: 5px;
+      margin-top: 18px;
+    }
+
+    .button:hover { background: #FF944D; }
+
+    .cta {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    footer {
+      background: #061327;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      header, nav { justify-content: center; }
+      section { padding: 55px 20px; }
+      .hero { padding: 70px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="brand">
+      DUCATO <span>WRESTLING</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="camps.html" class="active">Camps & Clinics</a>
+      <a href="lessons.html">Private Lessons</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <h1>WRESTLING <span>CAMPS & CLINICS</span></h1>
+      <p>
+        Build Your Fundamentals. Develop Mental Toughness.
+        Train With Purpose.
+      </p>
+    </div>
+
+    <section class="center">
+      <div class="container">
+        <h2>More Than Just Wrestling</h2>
+
+        <p class="intro">
+          At Ducato Wrestling, camps and clinics are focused
+          on developing fundamentally sound wrestlers while
+          building confidence, discipline, teamwork, and
+          character. Coach Dominic Ducato emphasizes
+          technical instruction, consistent effort, and
+          learning lessons that extend beyond the mat.
+        </p>
+      </div>
+    </section>
+
+    <section class="light">
+      <div class="container">
+        <h2 class="center">What Athletes Will Learn</h2>
+
+        <div class="cards">
+
+          <div class="card">
+            <h3>Fundamentals</h3>
+            <p>
+              Stance, motion, positioning,
+              essential techniques, and repetition.
+              Develop a strong foundation for success.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Offense & Defense</h3>
+            <p>
+              Improve attacks, finishes, defensive
+              reactions, and situational wrestling.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Mental Toughness</h3>
+            <p>
+              Build confidence, composure, discipline,
+              and the ability to perform under pressure.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Teamwork & Character</h3>
+            <p>
+              Develop accountability, sportsmanship,
+              perseverance, and relationships that
+              make teammates better.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="center">
+      <div class="container">
+        <h2>Upcoming Camps & Clinics</h2>
+
+        <div class="coming-soon">
+          <h3>Coming Soon</h3>
+
+          <p>
+            Upcoming camp and clinic dates,
+            registration details, and pricing
+            will be announced here when confirmed.
+          </p>
+
+          <p>
+            Interested in future training opportunities?
+            Reach out to learn more about upcoming events.
+          </p>
+
+          <a class="button" href="contact.html">
+            Contact Coach Ducato
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="light center">
+      <div class="container">
+        <h2>Training Areas & Availability</h2>
+
+        <div class="locations">
+
+          <div class="location">
+            <h3>Mankato, Minnesota</h3>
+            <p><strong>Late August – Late April</strong></p>
+            <p>
+              Academic-year training opportunities
+              in the Mankato area.
+            </p>
+          </div>
+
+          <div class="location">
+            <h3>Carpentersville, Illinois Area</h3>
+            <p><strong>Summer</strong></p>
+            <p>
+              Potential camps and clinics in
+              Carpentersville and surrounding communities.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          Specific facilities and event locations
+          will be announced with each confirmed camp.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Interested in Training?</h2>
+        <p>
+          Learn more about upcoming opportunities
+          and how Ducato Wrestling can help
+          you improve on and off the mat.
+        </p>
+
+        <a class="button" href="contact.html">
+          Get in Touch
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ducato Wrestling. All Rights Reserved.</p>
+    <p>Built on Fundamentals. Driven by Discipline.</p>
+  </footer>
+
+</body>
+</html>
