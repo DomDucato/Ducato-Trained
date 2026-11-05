@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,35 +31,25 @@
 
     header {
       background: var(--navy);
-      padding: 18px 7%;
+      padding: 14px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 18px;
+      gap: 20px;
     }
 
     .brand {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 12px;
-      color: white;
       text-decoration: none;
-      font-weight: 900;
-      font-size: 22px;
     }
 
-    .dt-logo {
-      background: var(--orange);
-      color: var(--navy);
-      font-size: 20px;
-      font-style: italic;
-      padding: 5px 10px;
-      border-radius: 4px;
-    }
-
-    .brand strong {
-      color: var(--orange);
+    .site-logo {
+      width: 160px;
+      height: 80px;
+      object-fit: contain;
+      display: block;
     }
 
     nav {
@@ -70,8 +61,8 @@
     nav a {
       color: white;
       text-decoration: none;
-      font-size: 14px;
       font-weight: bold;
+      font-size: 14px;
     }
 
     nav a:hover,
@@ -83,7 +74,7 @@
       background: linear-gradient(125deg, #0B1F3A, #1A3B63);
       color: white;
       text-align: center;
-      padding: 105px 20px;
+      padding: 95px 20px;
     }
 
     .hero h1 {
@@ -107,11 +98,11 @@
       display: inline-block;
       background: var(--orange);
       color: var(--navy);
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
       padding: 14px 27px;
-      margin: 7px;
       border-radius: 5px;
+      margin: 7px;
     }
 
     .button:hover {
@@ -120,8 +111,8 @@
 
     .button-outline {
       background: transparent;
-      border: 2px solid white;
       color: white;
+      border: 2px solid white;
     }
 
     section {
@@ -205,6 +196,11 @@
         justify-content: center;
       }
 
+      .site-logo {
+        width: 145px;
+        height: 75px;
+      }
+
       .hero {
         padding: 75px 20px;
       }
@@ -218,12 +214,15 @@
 
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- HEADER AND OFFICIAL DT LOGO -->
 
   <header>
     <a href="index.html" class="brand">
-      <span class="dt-logo">DT</span>
-      <span>DUCATO <strong>TRAINED</strong></span>
+      <img
+        src="ducato-trained-logo.png"
+        alt="Ducato Trained Logo"
+        class="site-logo"
+      >
     </a>
 
     <nav aria-label="Main navigation">
@@ -237,7 +236,7 @@
 
   <main>
 
-    <!-- HOMEPAGE BANNER -->
+    <!-- HERO SECTION -->
 
     <div class="hero">
       <h1>DUCATO <span>TRAINED</span></h1>
@@ -255,7 +254,7 @@
       </a>
     </div>
 
-    <!-- WELCOME -->
+    <!-- WELCOME SECTION -->
 
     <section>
       <div class="container">
@@ -266,6 +265,7 @@
           All-American Dominic Ducato, Ducato Trained is
           dedicated to developing fundamentally sound,
           disciplined, and confident wrestlers.
+
           We believe success means more than winning matches.
           Our training emphasizes technique, mental toughness,
           hard work, accountability, and character
@@ -335,7 +335,7 @@
       </div>
     </section>
 
-    <!-- LOCATIONS -->
+    <!-- TRAINING LOCATIONS -->
 
     <section>
       <div class="container">
@@ -349,8 +349,8 @@
             <p><strong>Late August – Late April</strong></p>
 
             <p>
-              Academic-year wrestling training
-              opportunities in the Mankato area.
+              Academic-year wrestling training opportunities
+              in the Mankato area.
             </p>
           </div>
 
@@ -371,7 +371,7 @@
       </div>
     </section>
 
-    <!-- MISSION -->
+    <!-- MISSION STATEMENT -->
 
     <section class="mission">
       <div class="container">
@@ -382,6 +382,7 @@
           disciplined, confident, and fundamentally
           sound wrestlers while building character,
           mental toughness, and leadership.
+
           Through personalized coaching, strong
           relationships, and a positive team
           environment, we help athletes succeed
