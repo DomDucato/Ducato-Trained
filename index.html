@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ducato Wrestling offers wrestling camps, clinics, and private lessons focused on fundamentals, discipline, and character.">
+  <title>Ducato Wrestling | Camps, Clinics & Private Lessons</title>
+
+  <style>
+    :root {
+      --navy: #0B1F3A;
+      --orange: #F97316;
+      --white: #FFFFFF;
+      --light: #F3F5F8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--navy);
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .brand {
+      color: var(--white);
+      font-size: 24px;
+      font-weight: 900;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .brand span {
+      color: var(--orange);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--orange);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0B1F3A, #183B65);
+      color: white;
+      text-align: center;
+      padding: 115px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 76px);
+      line-height: 1.1;
+      margin: 0 0 20px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      color: var(--orange);
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 700px;
+      margin: 0 auto 32px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 27px;
+      margin: 6px;
+      border-radius: 5px;
+      background: var(--orange);
+      color: var(--navy);
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    .button-outline {
+      color: white;
+      background: transparent;
+      border: 2px solid white;
+    }
+
+    section {
+      padding: 75px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 34px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    .light {
+      background: var(--light);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 35px auto 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 35px 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      border-top: 5px solid var(--orange);
+      text-align: left;
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin-top: 0;
+    }
+
+    .card a {
+      color: #B84B08;
+      font-weight: bold;
+    }
+
+    .mission {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .mission p {
+      max-width: 820px;
+      margin: auto;
+      font-size: 20px;
+    }
+
+    footer {
+      background: #061327;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 80px 20px;
+      }
+
+      section {
+        padding: 55px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="brand" href="index.html">
+      DUCATO <span>WRESTLING</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="camps.html">Camps & Clinics</a>
+      <a href="lessons.html">Private Lessons</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>DUCATO <span>WRESTLING</span></h1>
+      <p>Built on Fundamentals. Driven by Discipline.</p>
+
+      <a href="lessons.html" class="button">
+        Private Lessons
+      </a>
+
+      <a href="camps.html" class="button button-outline">
+        Camps & Clinics
+      </a>
+    </div>
+
+    <section>
+      <h2>Welcome to Ducato Wrestling</h2>
+
+      <p class="intro">
+        Founded by collegiate wrestler and NCAA Division II
+        All-American Dominic Ducato, Ducato Wrestling is
+        dedicated to developing confident, disciplined,
+        and technically sound wrestlers.
+        Our focus goes beyond winning matches. We believe
+        in building strong fundamentals, mental toughness,
+        accountability, and character that lasts a lifetime.
+      </p>
+    </section>
+
+    <section class="light">
+      <h2>Training Opportunities</h2>
+      <p>Personalized wrestling instruction designed to help athletes improve.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Private Lessons</h3>
+          <p>
+            Individual instruction focused on technique,
+            fundamentals, confidence, and areas for improvement.
+          </p>
+          <a href="lessons.html">Learn More</a>
+        </div>
+
+        <div class="card">
+          <h3>Camps & Clinics</h3>
+          <p>
+            High-quality training opportunities emphasizing
+            technical development, hard work, and competition.
+          </p>
+          <a href="camps.html">Learn More</a>
+        </div>
+
+        <div class="card">
+          <h3>Coaching Philosophy</h3>
+          <p>
+            Developing great wrestlers and even better people
+            through discipline, teamwork, and mental toughness.
+          </p>
+          <a href="about.html">About Coach Ducato</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>
+        At Ducato Wrestling, our mission is to develop disciplined,
+        confident, and fundamentally sound wrestlers while building
+        character, mental toughness, and leadership.
+        Through personalized coaching, strong relationships,
+        and a positive team environment, we help athletes
+        succeed on the mat and in life.
+      </p>
+    </section>
+
+    <section>
+      <h2>Ready to Get Better?</h2>
+      <p>
+        Take the next step in your wrestling development.
+        Contact Ducato Wrestling to learn about training opportunities.
+      </p>
+      <a href="contact.html" class="button">
+        Contact Coach Ducato
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ducato Wrestling. All Rights Reserved.</p>
+    <p>Built on Fundamentals. Driven by Discipline.</p>
+  </footer>
+
+</body>
+</html>
