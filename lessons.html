@@ -2,383 +2,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Private wrestling lessons with Coach Dominic Ducato. One-on-one, partner, and small-group training in Minnesota and Illinois.">
-  <title>Private Lessons | Ducato Wrestling</title>
-
-  <style>
-    :root {
-      --navy: #0B1F3A;
-      --orange: #F97316;
-      --light: #F3F5F8;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--navy);
-      line-height: 1.7;
-    }
-
-    header {
-      background: var(--navy);
-      padding: 20px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .brand {
-      color: white;
-      font-size: 24px;
-      font-weight: 900;
-      text-decoration: none;
-    }
-
-    .brand span { color: var(--orange); }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-
-    nav a {
-      color: white;
-      font-size: 14px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    nav a:hover, nav a.active {
-      color: var(--orange);
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #0B1F3A, #183B65);
-      color: white;
-      text-align: center;
-      padding: 90px 20px;
-    }
-
-    .hero h1 {
-      margin: 0 0 15px;
-      font-size: clamp(38px, 6vw, 65px);
-      text-transform: uppercase;
-      line-height: 1.2;
-    }
-
-    .hero span { color: var(--orange); }
-
-    .hero p {
-      font-size: 19px;
-      max-width: 750px;
-      margin: auto;
-    }
-
-    section { padding: 75px 8%; }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .center { text-align: center; }
-
-    h2 {
-      font-size: 32px;
-      text-transform: uppercase;
-      margin: 0 0 20px;
-    }
-
-    .intro {
-      max-width: 800px;
-      margin: auto;
-      font-size: 18px;
-    }
-
-    .light { background: var(--light); }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 35px;
-    }
-
-    .card {
-      background: white;
-      padding: 35px 25px;
-      border-top: 5px solid var(--orange);
-      border-radius: 8px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    .card h3 {
-      font-size: 23px;
-      margin-top: 0;
-    }
-
-    .price {
-      font-size: 43px;
-      font-weight: 900;
-      color: var(--navy);
-      line-height: 1.2;
-    }
-
-    .duration {
-      color: #525C6B;
-      font-weight: bold;
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--orange);
-      color: var(--navy);
-      text-decoration: none;
-      padding: 13px 25px;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 18px;
-    }
-
-    .button:hover { background: #FF944D; }
-
-    .details {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
-    }
-
-    .detail {
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      border-left: 5px solid var(--orange);
-    }
-
-    .detail h3 { margin-top: 0; }
-
-    .cta {
-      background: var(--navy);
-      color: white;
-      text-align: center;
-    }
-
-    .notice {
-      font-size: 14px;
-      max-width: 700px;
-      margin: 24px auto 0;
-      color: #DDE5EF;
-    }
-
-    footer {
-      background: #061327;
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 650px) {
-      header, nav { justify-content: center; }
-      section { padding: 55px 20px; }
-      .hero { padding: 70px 20px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ducato Trained private wrestling lessons with Coach Dominic Ducato. One-on-one, partner, and small-group training.">
+<title>Private Lessons | Ducato Trained</title>
+<style>
+:root{--navy:#0B1F3A;--orange:#F97316;--light:#F3F5F8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--navy);line-height:1.7}
+header{background:var(--navy);padding:16px 7%;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:white;text-decoration:none;font-weight:900;font-size:22px}
+.dt{background:var(--orange);color:var(--navy);font-size:20px;font-style:italic;padding:5px 9px;border-radius:4px}
+.brand strong{color:var(--orange)}
+nav{display:flex;flex-wrap:wrap;gap:18px}
+nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
+nav a:hover,nav a.active{color:var(--orange)}
+.hero{background:linear-gradient(125deg,#0B1F3A,#1A3B63);color:white;text-align:center;padding:90px 20px}
+.hero h1{font-size:clamp(38px,6vw,65px);margin:0 0 15px}
+.hero span{color:var(--orange)}
+.hero p{font-size:19px;max-width:750px;margin:auto}
+section{padding:70px 8%}
+.container{max-width:1100px;margin:auto}
+.center{text-align:center}
+h2{font-size:32px;text-transform:uppercase;margin:0 0 20px}
+.intro{font-size:18px;max-width:800px;margin:auto}
+.light{background:var(--light)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:35px}
+.card{background:white;padding:35px 25px;border-top:5px solid var(--orange);border-radius:8px;box-shadow:0 5px 20px #00000012;text-align:center}
+.card h3{font-size:23px;margin-top:0}
+.price{font-size:44px;font-weight:900;line-height:1.2}
+.duration{color:#526173;font-weight:bold}
+.button{display:inline-block;background:var(--orange);color:var(--navy);padding:13px 25px;text-decoration:none;font-weight:bold;border-radius:5px;margin-top:18px}
+.details{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:30px}
+.detail{background:white;padding:30px;border-left:5px solid var(--orange);border-radius:8px}
+.detail h3{margin-top:0}
+.cta{background:var(--navy);color:white;text-align:center}
+.notice{font-size:14px;max-width:750px;margin:25px auto 0;color:#DDE5EF}
+.footer{background:#061327;color:white;text-align:center;padding:30px 15px;font-size:14px}
+@media(max-width:700px){header,nav{justify-content:center}section{padding:55px 20px}}
+</style>
 </head>
-
 <body>
+<header>
+<a class="brand" href="index.html">
+<span class="dt">DT</span>
+<span>DUCATO <strong>TRAINED</strong></span>
+</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="camps.html">Camps & Clinics</a>
+<a class="active" href="lessons.html">Private Lessons</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
 
-  <header>
-    <a href="index.html" class="brand">
-      DUCATO <span>WRESTLING</span>
-    </a>
+<main>
+<div class="hero">
+<h1>PRIVATE <span>LESSONS</span></h1>
+<p>Personalized Wrestling Instruction.
+Strong Fundamentals. Greater Confidence.</p>
+</div>
 
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="camps.html">Camps & Clinics</a>
-      <a href="lessons.html" class="active">Private Lessons</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<section class="center">
+<div class="container">
+<h2>Train With Coach Ducato</h2>
+<p class="intro">
+Ducato Trained offers personalized instruction
+focused on improving technique, building confidence,
+and developing a strong foundation in wrestling.
+Each lesson is designed to help wrestlers work
+toward their individual goals.
+</p>
+</div>
+</section>
 
-  <main>
-    <div class="hero">
-      <h1>PRIVATE <span>LESSONS</span></h1>
-      <p>
-        Personalized Wrestling Instruction.
-        Strong Fundamentals. Greater Confidence.
-      </p>
-    </div>
+<section class="light">
+<div class="container center">
+<h2>Lesson Options & Pricing</h2>
+<p>Choose the training experience that fits your needs.</p>
+<div class="cards">
 
-    <section class="center">
-      <div class="container">
-        <h2>Train With Coach Ducato</h2>
-        <p class="intro">
-          Whether you're looking to sharpen your technique,
-          improve your fundamentals, or become a more
-          confident wrestler, Ducato Wrestling focuses on
-          personalized instruction built around each
-          athlete's strengths, weaknesses, and goals.
-        </p>
-      </div>
-    </section>
+<div class="card">
+<h3>1-on-1 Private Lesson</h3>
+<div class="price">$80</div>
+<p class="duration">60 Minutes</p>
+<p><strong>One Wrestler</strong></p>
+<p>Individualized instruction focused on
+fundamentals, technique correction,
+personal weaknesses, and confidence.</p>
+<a class="button" href="contact.html">Request a Lesson</a>
+</div>
 
-    <section class="light">
-      <div class="container center">
-        <h2>Lesson Options & Pricing</h2>
-        <p>Find the training format that fits your needs.</p>
+<div class="card">
+<h3>Partner Private Lesson</h3>
+<div class="price">$100</div>
+<p class="duration">60 Minutes</p>
+<p><strong>2 Wrestlers — $50 Each</strong></p>
+<p>Train with a partner while receiving
+focused coaching, technique corrections,
+and opportunities to drill together.</p>
+<a class="button" href="contact.html">Request a Lesson</a>
+</div>
 
-        <div class="cards">
-          <div class="card">
-            <h3>1-on-1 Private Lesson</h3>
-            <div class="price">$80</div>
-            <p class="duration">60 Minutes</p>
-            <p>One wrestler</p>
-            <p>
-              Individual attention focused on technique,
-              correcting weaknesses, mastering fundamentals,
-              and developing confidence.
-            </p>
-            <a class="button" href="contact.html">
-              Request a Lesson
-            </a>
-          </div>
+<div class="card">
+<h3>Small-Group Lesson</h3>
+<div class="price">$40</div>
+<p class="duration">90 Minutes</p>
+<p><strong>Per Wrestler — 4 to 8 Wrestlers</strong></p>
+<p>Group instruction emphasizing technique,
+repetition, live situations,
+teamwork, and accountability.</p>
+<p>
+4 wrestlers: $160 total<br>
+5 wrestlers: $200 total<br>
+6 wrestlers: $240 total<br>
+7 wrestlers: $280 total<br>
+8 wrestlers: $320 total
+</p>
+<a class="button" href="contact.html">Request Group Training</a>
+</div>
 
-          <div class="card">
-            <h3>Partner Private Lesson</h3>
-            <div class="price">$100</div>
-            <p class="duration">60 Minutes</p>
-            <p>2 wrestlers — $50 each</p>
-            <p>
-              Train alongside a partner while receiving
-              focused instruction, technique corrections,
-              and opportunities to drill together.
-            </p>
-            <a class="button" href="contact.html">
-              Request a Lesson
-            </a>
-          </div>
+</div>
+</div>
+</section>
 
-          <div class="card">
-            <h3>Small-Group Lesson</h3>
-            <div class="price">$40</div>
-            <p class="duration">90 Minutes</p>
-            <p>Per wrestler — 4 to 8 wrestlers</p>
-            <p>
-              Group instruction focused on technique,
-              live situations, repetition, teamwork,
-              and accountability.
-            </p>
-            <p>
-              4 wrestlers: $160 total<br>
-              6 wrestlers: $240 total<br>
-              8 wrestlers: $320 total
-            </p>
-            <a class="button" href="contact.html">
-              Request Group Training
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+<section>
+<div class="container center">
+<h2>Training Locations & Availability</h2>
+<p>Exact training facilities are arranged when scheduling.</p>
+<div class="details">
+<div class="detail">
+<h3>Mankato, Minnesota</h3>
+<p><strong>Late August – Late April</strong></p>
+<p>Academic-year private lesson availability
+in the Mankato area.</p>
+</div>
+<div class="detail">
+<h3>Carpentersville, Illinois Area</h3>
+<p><strong>Summer Availability</strong></p>
+<p>Private lessons in Carpentersville and
+surrounding communities, generally within
+30–60 minutes of the area.</p>
+</div>
+</div>
+</div>
+</section>
 
-    <section>
-      <div class="container center">
-        <h2>Training Locations & Availability</h2>
-        <p>
-          Ducato Wrestling offers seasonal training
-          opportunities in Minnesota and Illinois.
-          Specific facilities are arranged when
-          scheduling lessons.
-        </p>
+<section class="light center">
+<div class="container">
+<h2>What We Focus On</h2>
+<div class="details">
+<div class="detail">
+<h3>Fundamentals</h3>
+<p>Stance, motion, positioning, technique,
+and consistent repetition.</p>
+</div>
+<div class="detail">
+<h3>Offense & Defense</h3>
+<p>Attacks, finishes, defensive reactions,
+and situational wrestling.</p>
+</div>
+<div class="detail">
+<h3>Mindset</h3>
+<p>Mental toughness, confidence,
+discipline, composure, and consistency.</p>
+</div>
+</div>
+</div>
+</section>
 
-        <div class="details">
-          <div class="detail">
-            <h3>Mankato, Minnesota</h3>
-            <p><strong>Late August – Late April</strong></p>
-            <p>
-              Academic-year training availability
-              in the Mankato area.
-            </p>
-          </div>
+<section class="cta">
+<div class="container">
+<h2>Ready to Get Better?</h2>
+<p>Contact Coach Ducato to discuss lesson availability.</p>
+<a class="button" href="contact.html">Contact Coach Ducato</a>
+<p class="notice">
+Sessions are subject to coach availability,
+facility arrangements, and applicable athletic
+compliance requirements. An inquiry does not
+confirm a booking. Any additional facility or
+travel charges must be agreed upon beforehand.
+</p>
+</div>
+</section>
+</main>
 
-          <div class="detail">
-            <h3>Carpentersville, Illinois Area</h3>
-            <p><strong>Summer Availability</strong></p>
-            <p>
-              Training opportunities in Carpentersville
-              and surrounding communities, generally
-              within 30–60 minutes.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="light center">
-      <div class="container">
-        <h2>What We Focus On</h2>
-
-        <div class="details">
-          <div class="detail">
-            <h3>Fundamentals</h3>
-            <p>
-              Stance, positioning, motion,
-              technique, and repetition.
-            </p>
-          </div>
-          <div class="detail">
-            <h3>Technical Development</h3>
-            <p>
-              Offense, defense, finishes,
-              and situational wrestling.
-            </p>
-          </div>
-          <div class="detail">
-            <h3>Mental Toughness</h3>
-            <p>
-              Confidence, discipline,
-              consistency, and composure.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container">
-        <h2>Ready to Get Better?</h2>
-        <p>
-          Contact Coach Ducato to discuss training
-          opportunities, lesson formats, and availability.
-        </p>
-        <a class="button" href="contact.html">
-          Contact Coach Ducato
-        </a>
-        <p class="notice">
-          Lessons are subject to coach availability,
-          facility arrangements, and applicable athletic
-          compliance requirements. Submitting an inquiry
-          does not confirm a booking.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Ducato Wrestling. All Rights Reserved.</p>
-    <p>Built on Fundamentals. Driven by Discipline.</p>
-  </footer>
-
+<footer class="footer">
+<p>&copy; 2026 Ducato Trained. All Rights Reserved.</p>
+<p>Built on Fundamentals. Driven by Discipline.</p>
+</footer>
 </body>
 </html>
