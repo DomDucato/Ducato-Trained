@@ -1,431 +1,724 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Meet Coach Dominic Ducato, NCAA Division II All-American wrestler and founder of Ducato Trained.">
-<title>About Coach Ducato | Ducato Trained</title>
-<style>
-:root {
-  --navy: #0B1F3A;
-  --orange: #F97316;
-  --light: #F3F5F8;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-* { box-sizing: border-box; }
+  <meta name="description"
+        content="Meet Coach Dominic Ducato, NCAA Division II All-American wrestler and founder of Ducato Trained. Learn about his wrestling accomplishments and coaching philosophy.">
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--navy);
-  line-height: 1.7;
-}
+  <title>About Coach Ducato | Ducato Trained</title>
 
-header {
-  background: var(--navy);
-  padding: 15px 7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+  <style>
+    :root {
+      --navy: #0B1F3A;
+      --orange: #F97316;
+      --light: #F3F5F8;
+      --white: #FFFFFF;
+      --dark: #061327;
+    }
 
-.brand {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-.site-logo {
-  width: 185px;
-  height: 105px;
-  object-fit: contain;
-  display: block;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      line-height: 1.7;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-}
+    img {
+      max-width: 100%;
+    }
 
-nav a:hover,
-nav a.active {
-  color: var(--orange);
-}
+    /* HEADER */
 
-.hero {
-  background: linear-gradient(125deg, #0B1F3A, #1A3B63);
-  color: white;
-  text-align: center;
-  padding: 90px 20px;
-}
+    header {
+      background: var(--navy);
+      padding: 15px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-.hero h1 {
-  font-size: clamp(38px, 6vw, 64px);
-  margin: 0 0 12px;
-  line-height: 1.2;
-}
+    .brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
 
-.hero span { color: var(--orange); }
+    .site-logo {
+      width: 185px;
+      height: 105px;
+      object-fit: contain;
+      display: block;
+    }
 
-.hero p {
-  margin: 0;
-  font-size: 20px;
-}
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
 
-section { padding: 70px 8%; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
+    nav a:hover,
+    nav a.active {
+      color: var(--orange);
+    }
 
-h2 {
-  font-size: 32px;
-  text-transform: uppercase;
-  margin: 0 0 25px;
-}
+    /* HERO */
 
-h2::after {
-  content: "";
-  display: block;
-  width: 65px;
-  height: 5px;
-  background: var(--orange);
-  margin-top: 12px;
-}
+    .hero {
+      background: linear-gradient(
+        125deg,
+        #0B1F3A,
+        #1A3B63
+      );
+      color: white;
+      padding: 75px 8%;
+    }
 
-p { font-size: 17px; }
+    .hero-layout {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 50px;
+    }
 
-.light { background: var(--light); }
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1.15;
+      text-transform: uppercase;
+      margin: 0 0 20px;
+    }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
-}
+    .hero h1 span {
+      color: var(--orange);
+    }
 
-.card {
-  background: white;
-  padding: 28px;
-  border-top: 5px solid var(--orange);
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-}
+    .hero-subtitle {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
 
-.card h3 {
-  font-size: 21px;
-  margin-top: 0;
-}
+    .hero-description {
+      font-size: 18px;
+      color: #E4EAF1;
+    }
 
-.philosophy h3 {
-  color: #A74305;
-  font-size: 23px;
-  margin: 32px 0 8px;
-}
+    .headshot {
+      display: block;
+      width: 100%;
+      max-width: 420px;
+      height: 480px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 12px;
+      border: 4px solid var(--orange);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+      margin: auto;
+    }
 
-.quote {
-  background: var(--navy);
-  color: white;
-  padding: 32px;
-  border-left: 6px solid var(--orange);
-  border-radius: 6px;
-  font-size: 21px;
-  font-weight: bold;
-  margin: 35px 0;
-}
+    /* GENERAL SECTIONS */
 
-.cta {
-  background: var(--navy);
-  color: white;
-  text-align: center;
-}
+    section {
+      padding: 75px 8%;
+    }
 
-.cta h2::after {
-  margin-left: auto;
-  margin-right: auto;
-}
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
 
-.button {
-  display: inline-block;
-  background: var(--orange);
-  color: var(--navy);
-  padding: 14px 28px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 15px;
-}
+    h2 {
+      font-size: clamp(28px, 4vw, 36px);
+      text-transform: uppercase;
+      margin: 0 0 25px;
+    }
 
-.button:hover { filter: brightness(1.1); }
+    h2::after {
+      content: "";
+      display: block;
+      width: 65px;
+      height: 5px;
+      background: var(--orange);
+      margin-top: 12px;
+    }
 
-footer {
-  background: #061327;
-  color: white;
-  text-align: center;
-  padding: 30px 15px;
-  font-size: 14px;
-}
+    p {
+      font-size: 17px;
+    }
 
-footer p { font-size: 14px; }
-footer a { color: #FFB17D; }
+    .light {
+      background: var(--light);
+    }
 
-@media (max-width: 700px) {
-  header, nav { justify-content: center; }
-  section { padding: 50px 20px; }
-  .site-logo { width: 160px; height: 95px; }
-  .hero { padding: 70px 20px; }
-}
-</style>
+    /* ACCOMPLISHMENTS */
+
+    .achievement-layout {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .all-american-photo {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      margin: auto;
+    }
+
+    .achievement-list {
+      padding-left: 20px;
+      font-size: 18px;
+    }
+
+    .achievement-list li {
+      margin-bottom: 15px;
+    }
+
+    /* COACHING PHILOSOPHY */
+
+    .philosophy h3 {
+      color: #A74305;
+      font-size: 23px;
+      margin: 30px 0 8px;
+    }
+
+    .quote {
+      background: var(--navy);
+      color: white;
+      border-left: 6px solid var(--orange);
+      padding: 32px;
+      border-radius: 7px;
+      font-size: 21px;
+      font-weight: bold;
+      margin: 35px 0;
+    }
+
+    /* CONTACT BUTTON */
+
+    .button {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 14px 27px;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+
+    .button:hover {
+      filter: brightness(1.1);
+    }
+
+    .cta {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2::after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #FFB17D;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      header,
+      nav {
+        justify-content: center;
+      }
+
+      .site-logo {
+        width: 160px;
+        height: 95px;
+      }
+
+      .hero-layout,
+      .achievement-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 55px 20px;
+        text-align: center;
+      }
+
+      .headshot {
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+      }
+
+      section {
+        padding: 55px 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HEADER WITH OFFICIAL DT LOGO -->
+  <!-- HEADER WITH OFFICIAL DT LOGO -->
 
-<header>
-  <a href="index.html" class="brand">
-    <img
-      src="ducato-trained-logo.png"
-      alt="Ducato Trained Logo"
-      class="site-logo"
-      width="185"
-      height="105"
-    >
-  </a>
+  <header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About Me</a>
-    <a href="camps.html">Camps & Clinics</a>
-    <a href="lessons.html">Private Lessons</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <a href="index.html" class="brand">
 
-<main>
+      <img
+        src="ducato-trained-logo.png"
+        alt="Ducato Trained Logo"
+        class="site-logo"
+        width="185"
+        height="105"
+      >
 
-<!-- ABOUT HERO -->
+    </a>
 
-<div class="hero">
-  <h1>MEET <span>COACH DUCATO</span></h1>
-  <p>Wrestler. Coach. Mentor.</p>
-</div>
+    <nav aria-label="Main navigation">
 
-<!-- ABOUT ME -->
+      <a href="index.html">Home</a>
 
-<section>
-  <div class="container">
-    <h2>About Me</h2>
+      <a href="about.html" class="active">
+        About Me
+      </a>
 
-    <p>
-      My name is Dominic Ducato, and I am a collegiate
-      wrestler at Minnesota State University, Mankato.
-      I previously competed at St. Cloud State University
-      and earned NCAA Division II All-American honors.
-    </p>
+      <a href="camps.html">Camps & Clinics</a>
 
-    <p>
-      Wrestling has played an important role in shaping
-      who I am today. Throughout my career, I've learned
-      the value of discipline, hard work, consistency,
-      sacrifice, and overcoming adversity.
-      These lessons extend far beyond competition.
-    </p>
+      <a href="lessons.html">Private Lessons</a>
 
-    <p>
-      I created Ducato Trained to share my wrestling
-      knowledge and experiences with the next generation
-      of athletes. My goal is to help wrestlers improve
-      their technique, develop confidence, and become
-      stronger individuals both on and off the mat.
-    </p>
-  </div>
-</section>
+      <a href="contact.html">Contact</a>
 
-<!-- WRESTLING BACKGROUND -->
+    </nav>
 
-<section class="light">
-  <div class="container">
-    <h2>Wrestling & Coaching Background</h2>
+  </header>
 
-    <div class="cards">
+  <main>
 
-      <div class="card">
-        <h3>NCAA Division II All-American</h3>
-        <p>
-          Earned All-American honors while competing
-          at the collegiate level.
-        </p>
-      </div>
+    <!-- ABOUT HERO WITH REAL HEADSHOT -->
 
-      <div class="card">
-        <h3>Collegiate Wrestling</h3>
-        <p>
-          Current wrestler at Minnesota State University,
-          Mankato, and former wrestler at
-          St. Cloud State University.
-        </p>
-      </div>
+    <div class="hero">
 
-      <div class="card">
-        <h3>Coaching Experience</h3>
-        <p>
-          Experience coaching youth and high school
-          wrestlers, with an emphasis on fundamentals,
-          technical development, confidence,
-          and personal improvement.
-        </p>
+      <div class="hero-layout">
+
+        <div>
+
+          <h1>
+            MEET <span>COACH DUCATO</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Wrestler. Coach. Mentor.
+          </p>
+
+          <p class="hero-description">
+            NCAA Division II All-American
+          </p>
+
+          <p class="hero-description">
+            Minnesota State University, Mankato
+          </p>
+
+          <p class="hero-description">
+            Founder of Ducato Trained
+          </p>
+
+        </div>
+
+        <div>
+
+          <img
+            src="coach-headshot.webp"
+            alt="Dominic Ducato wearing Minnesota State Wrestling apparel"
+            class="headshot"
+            loading="eager"
+          >
+
+        </div>
+
       </div>
 
     </div>
-  </div>
-</section>
 
-<!-- COACHING PHILOSOPHY -->
+    <!-- ABOUT ME -->
 
-<section class="philosophy">
-  <div class="container">
+    <section>
 
-    <h2>My Coaching Philosophy</h2>
+      <div class="container">
+
+        <h2>About Me</h2>
+
+        <p>
+          My name is Dominic Ducato, and I am a collegiate
+          wrestler at Minnesota State University, Mankato.
+          I previously competed at St. Cloud State
+          University, where I earned NCAA Division II
+          All-American honors.
+        </p>
+
+        <p>
+          Wrestling has played an important role in
+          shaping who I am today. Throughout my career,
+          I've learned the value of discipline,
+          hard work, consistency, sacrifice,
+          and overcoming adversity.
+        </p>
+
+        <p>
+          These lessons extend far beyond competition.
+          I created Ducato Trained to share my wrestling
+          knowledge and experience with the next
+          generation of athletes.
+        </p>
+
+        <p>
+          My goal is to help wrestlers improve their
+          technique, develop confidence, and become
+          stronger individuals both on and off the mat.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- WRESTLING ACCOMPLISHMENTS -->
+
+    <section class="light">
+
+      <div class="container">
+
+        <div class="achievement-layout">
+
+          <div>
+
+            <img
+              src="ncaa-all-american.jpeg"
+              alt="2026 NCAA Division II All-American recognition for Dominic Ducato"
+              class="all-american-photo"
+              loading="lazy"
+            >
+
+          </div>
+
+          <div>
+
+            <h2>
+              Wrestling Accomplishments
+            </h2>
+
+            <p>
+              My collegiate wrestling career
+              has given me valuable experience
+              competing at a high level and
+              learning from successful coaches
+              and training partners.
+            </p>
+
+            <ul class="achievement-list">
+
+              <li>
+                <strong>
+                  2026 NCAA Division II All-American
+                </strong>
+              </li>
+
+              <li>
+                NCAA Division II collegiate wrestler
+              </li>
+
+              <li>
+                Current wrestler at Minnesota State
+                University, Mankato
+              </li>
+
+              <li>
+                Former wrestler at
+                St. Cloud State University
+              </li>
+
+              <li>
+                Experience coaching youth
+                and high school wrestlers
+              </li>
+
+            </ul>
+
+            <p>
+              These experiences have helped
+              shape my approach to teaching
+              wrestling fundamentals,
+              mental toughness,
+              and competitive discipline.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- COACHING EXPERIENCE -->
+
+    <section>
+
+      <div class="container">
+
+        <h2>Coaching Experience</h2>
+
+        <p>
+          In addition to my collegiate wrestling
+          experience, I have worked with youth
+          and high school wrestlers to help
+          develop their skills and confidence.
+        </p>
+
+        <p>
+          My coaching experience includes
+          Pursuit Wrestling Club in Rice,
+          Minnesota, along with coaching
+          youth and high school wrestlers
+          in the St. Cloud area.
+        </p>
+
+        <p>
+          I enjoy working with athletes
+          of different ages and skill levels.
+          My goal is to create a positive,
+          challenging, and supportive
+          environment where wrestlers can
+          learn and continue improving.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- COACHING PHILOSOPHY -->
+
+    <section class="light philosophy">
+
+      <div class="container">
+
+        <h2>My Coaching Philosophy</h2>
+
+        <p>
+          My coaching philosophy focuses on helping
+          wrestlers become not only great athletes
+          but also good people.
+        </p>
+
+        <p>
+          I believe wrestling teaches important
+          life lessons such as discipline,
+          perseverance, teamwork, honesty,
+          and accountability.
+        </p>
+
+        <p>
+          While I am highly competitive,
+          I value character development
+          more than winning alone.
+        </p>
+
+        <h3>Fundamentals First</h3>
+
+        <p>
+          Every wrestler is different,
+          with unique strengths, weaknesses,
+          and goals.
+        </p>
+
+        <p>
+          I believe mastering the fundamentals
+          is essential for long-term wrestling
+          success. My own accomplishments
+          came from developing a strong
+          technical foundation through
+          consistency and repetition.
+        </p>
+
+        <h3>Mental Toughness & Confidence</h3>
+
+        <p>
+          Wrestling requires both physical
+          and mental toughness.
+        </p>
+
+        <p>
+          My goal is to help athletes develop
+          confidence, consistency, and the
+          ability to handle pressure
+          and adversity.
+        </p>
+
+        <p>
+          I want wrestlers to learn how to
+          remain calm, focused, and determined
+          when facing difficult challenges.
+        </p>
+
+        <h3>Teamwork & Accountability</h3>
+
+        <p>
+          Although wrestling is often viewed
+          as an individual sport, I believe
+          friendships and teamwork are
+          essential to long-term success.
+        </p>
+
+        <p>
+          A positive team culture encourages
+          wrestlers to support one another,
+          hold each other accountable,
+          and push each other toward
+          higher standards.
+        </p>
+
+        <div class="quote">
+          "You fight harder for your team
+          when they are your best friends."
+        </div>
+
+        <h3>Growth Mindset & Character</h3>
+
+        <p>
+          I believe in setting realistic,
+          achievable goals while encouraging
+          a growth mindset.
+        </p>
+
+        <p>
+          Obstacles and setbacks should be
+          viewed as opportunities to
+          learn and improve.
+        </p>
+
+        <p>
+          My ultimate goal is to create
+          a positive, challenging, and
+          enjoyable training environment
+          where athletes can grow,
+          learn, and have fun while
+          working toward their goals.
+        </p>
+
+        <p>
+          I want every wrestler I coach
+          to develop skills and character
+          traits that will help them
+          throughout their education,
+          relationships, careers,
+          and everyday lives.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- FINAL CALL TO ACTION -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <h2>Train With Coach Ducato</h2>
+
+        <p>
+          Ready to improve your wrestling
+          skills, strengthen your fundamentals,
+          and become more confident on the mat?
+        </p>
+
+        <a href="lessons.html" class="button">
+          Explore Private Lessons
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
 
     <p>
-      My coaching philosophy focuses on helping wrestlers
-      become not only great athletes but also good people.
-      I believe wrestling teaches important life lessons
-      such as discipline, perseverance, teamwork,
-      honesty, and accountability.
+      &copy; 2026 Ducato Trained.
+      All Rights Reserved.
     </p>
 
     <p>
-      While I am highly competitive, I value character
-      development more than winning alone. I want my
-      athletes to develop integrity, a strong work ethic,
-      and good sportsmanship because these qualities
-      are essential to success on and off the mat.
-    </p>
-
-    <h3>Fundamentals First</h3>
-
-    <p>
-      Every wrestler is different, with unique strengths,
-      weaknesses, and goals. I am committed to providing
-      personalized instruction that helps each athlete
-      reach their full potential.
+      Built on Fundamentals.
+      Driven by Discipline.
     </p>
 
     <p>
-      I believe mastering the fundamentals is essential
-      for wrestling success. My own accomplishments
-      came from developing a strong technical foundation,
-      and I want to help athletes build that same
-      foundation through consistency and repetition.
+
+      <a
+        href="https://www.instagram.com/domducato/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+      |
+
+      <a href="contact.html">
+        Contact
+      </a>
+
     </p>
 
-    <h3>Mental Toughness & Confidence</h3>
-
-    <p>
-      Wrestling requires both physical and mental toughness.
-      While strength, stamina, and agility are important,
-      I believe mental strength is even more essential.
-    </p>
-
-    <p>
-      My goal is to help athletes develop confidence,
-      consistency, and the ability to handle pressure
-      and adversity. I want wrestlers to learn how to
-      stay calm, focused, and determined when facing
-      difficult challenges.
-    </p>
-
-    <h3>Teamwork & Accountability</h3>
-
-    <p>
-      Although wrestling is often viewed as an individual
-      sport, I believe friendships and teamwork are
-      essential to long-term success.
-    </p>
-
-    <p>
-      A positive team culture encourages wrestlers
-      to support one another, hold each other accountable,
-      and push each other toward higher standards.
-    </p>
-
-    <div class="quote">
-      "You fight harder for your team when they are
-      your best friends."
-    </div>
-
-    <h3>Growth Mindset & Character</h3>
-
-    <p>
-      I believe in setting realistic and achievable
-      goals while encouraging a growth mindset.
-      Obstacles and setbacks should be viewed
-      as opportunities to learn and improve.
-    </p>
-
-    <p>
-      My ultimate goal is to create a positive,
-      challenging, and enjoyable training environment
-      where athletes can grow, learn, and have fun
-      while working toward their goals.
-    </p>
-
-    <p>
-      I want every wrestler I coach to develop
-      valuable skills and character traits
-      that will help them throughout their
-      education, relationships, careers,
-      and everyday lives.
-    </p>
-
-  </div>
-</section>
-
-<!-- TRAINING CALL TO ACTION -->
-
-<section class="cta">
-  <div class="container">
-    <h2>Train With Coach Ducato</h2>
-
-    <p>
-      Ready to improve your wrestling skills,
-      strengthen your fundamentals,
-      and become more confident on the mat?
-    </p>
-
-    <a href="lessons.html" class="button">
-      Explore Private Lessons
-    </a>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <p>&copy; 2026 Ducato Trained. All Rights Reserved.</p>
-  <p>Built on Fundamentals. Driven by Discipline.</p>
-  <p>
-    <a href="https://www.instagram.com/domducato/">
-      Instagram
-    </a>
-    |
-    <a href="contact.html">Contact</a>
-  </p>
-</footer>
+  </footer>
 
 </body>
 </html>
-
