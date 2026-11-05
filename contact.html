@@ -1,250 +1,730 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Contact Ducato Trained for private wrestling lessons, camps, clinics, and coaching opportunities.">
-<title>Contact | Ducato Trained</title>
-<style>
-:root{--navy:#0B1F3A;--orange:#F97316;--light:#F3F5F8}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--navy);line-height:1.7}
-header{background:var(--navy);padding:16px 7%;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px;color:white;text-decoration:none;font-weight:900;font-size:22px}
-.dt{background:var(--orange);color:var(--navy);font-size:20px;font-style:italic;padding:5px 9px;border-radius:4px}
-.brand strong{color:var(--orange)}
-nav{display:flex;flex-wrap:wrap;gap:18px}
-nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
-nav a:hover,nav a.active{color:var(--orange)}
-.hero{background:linear-gradient(125deg,#0B1F3A,#1A3B63);color:white;text-align:center;padding:90px 20px}
-.hero h1{font-size:clamp(38px,6vw,65px);margin:0 0 15px;line-height:1.2}
-.hero span{color:var(--orange)}
-.hero p{max-width:750px;font-size:19px;margin:auto}
-section{padding:70px 8%}
-.container{max-width:1100px;margin:auto}
-.center{text-align:center}
-h2{font-size:32px;text-transform:uppercase;margin:0 0 20px}
-.intro{max-width:760px;margin:0 auto 30px;font-size:18px}
-.light{background:var(--light)}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:30px}
-.card{background:white;padding:30px 24px;border-top:5px solid var(--orange);border-radius:8px;box-shadow:0 5px 20px #00000012;overflow-wrap:anywhere}
-.card h3{margin-top:0}
-.card a{color:#A74305;font-weight:bold}
-.form-box{max-width:750px;margin:30px auto 0;padding:35px;background:white;border-radius:10px;box-shadow:0 5px 20px #00000012}
-label{display:block;font-weight:bold;margin-bottom:7px}
-input,select,textarea{width:100%;padding:13px;margin-bottom:20px;border:1px solid #AAB5C2;border-radius:5px;font:inherit;color:var(--navy);background:white}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--orange)}
-textarea{min-height:140px;resize:vertical}
-.button{border:0;background:var(--orange);color:var(--navy);font-size:16px;font-weight:bold;padding:15px 27px;border-radius:5px;cursor:pointer}
-.button:hover{filter:brightness(1.1)}
-.notice{font-size:14px;color:#526173}
-.locations{background:var(--navy);color:white;text-align:center}
-.footer{background:#061327;color:white;text-align:center;padding:30px 15px;font-size:14px}
-.footer a{color:#FFB17D}
-@media(max-width:700px){header,nav{justify-content:center}section{padding:50px 20px}.form-box{padding:22px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Contact Ducato Trained for wrestling private lessons, camps, clinics, and coaching opportunities.">
+
+  <title>Contact | Ducato Trained</title>
+
+  <style>
+    :root {
+      --navy: #0B1F3A;
+      --orange: #F97316;
+      --light: #F3F5F8;
+      --white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+
+    header {
+      background: var(--navy);
+      padding: 15px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    /* OFFICIAL DT LOGO */
+
+    .site-logo {
+      width: 185px;
+      height: 105px;
+      object-fit: contain;
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--orange);
+    }
+
+    /* HERO */
+
+    .hero {
+      background: linear-gradient(
+        125deg, #0B1F3A, #1A3B63
+      );
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      line-height: 1.2;
+      margin: 0 0 18px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      color: var(--orange);
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 19px;
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 36px);
+      text-transform: uppercase;
+      margin: 0 0 20px;
+    }
+
+    .intro {
+      max-width: 750px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+    }
+
+    .light {
+      background: var(--light);
+    }
+
+    /* CONTACT CARDS */
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 24px;
+      border-top: 5px solid var(--orange);
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      overflow-wrap: anywhere;
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin-top: 0;
+    }
+
+    .card a {
+      color: #A74305;
+      font-weight: bold;
+    }
+
+    /* CONTACT FORM */
+
+    .form-box {
+      max-width: 750px;
+      margin: 35px auto 0;
+      padding: 35px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 20px;
+      border: 1px solid #AAB5C2;
+      border-radius: 5px;
+      font: inherit;
+      background: white;
+      color: var(--navy);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid var(--orange);
+      outline-offset: 2px;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    /* BUTTON */
+
+    .button {
+      background: var(--orange);
+      color: var(--navy);
+      font-weight: bold;
+      font-size: 16px;
+      padding: 15px 27px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      filter: brightness(1.1);
+    }
+
+    .notice {
+      font-size: 14px;
+      color: #526173;
+      margin-top: 20px;
+    }
+
+    /* LOCATIONS */
+
+    .locations {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .locations p {
+      font-size: 18px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #061327;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #FFB17D;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+      header,
+      nav {
+        justify-content: center;
+      }
+
+      .site-logo {
+        width: 160px;
+        height: 95px;
+      }
+
+      section {
+        padding: 50px 20px;
+      }
+
+      .hero {
+        padding: 70px 20px;
+      }
+
+      .form-box {
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header>
-<a class="brand" href="index.html">
-<span class="dt">DT</span>
-<span>DUCATO <strong>TRAINED</strong></span>
-</a>
-<nav aria-label="Main navigation">
-<a href="index.html">Home</a>
-<a href="about.html">About Me</a>
-<a href="camps.html">Camps & Clinics</a>
-<a href="lessons.html">Private Lessons</a>
-<a class="active" href="contact.html">Contact</a>
-</nav>
-</header>
 
-<main>
-<div class="hero">
-<h1>CONTACT <span>COACH DUCATO</span></h1>
-<p>Have questions about wrestling training?
-Reach out about private lessons, camps, clinics,
-and coaching opportunities.</p>
-</div>
+  <!-- HEADER WITH OFFICIAL LOGO -->
 
-<section class="center">
-<div class="container">
-<h2>Let's Get to Work</h2>
-<p class="intro">
-Whether you're a parent seeking personalized
-instruction, a wrestler looking to improve,
-or a coach interested in hosting a clinic,
-I'd love to hear from you.
-</p>
+  <header>
 
-<div class="cards">
-<div class="card">
-<h3>Email Me</h3>
-<p>Questions, lessons, and camp inquiries.</p>
-<a href="mailto:Dommyd125@gmail.com">
-Dommyd125@gmail.com
-</a>
-</div>
+    <a href="index.html" class="brand">
+      <img
+        src="ducato-trained-logo.png"
+        alt="Ducato Trained Logo"
+        class="site-logo"
+        width="185"
+        height="105"
+      >
+    </a>
 
-<div class="card">
-<h3>Call or Text</h3>
-<p>Contact me directly about training.</p>
-<a href="tel:+18476878871">
-(847) 687-8871
-</a>
-</div>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="camps.html">Camps & Clinics</a>
+      <a href="lessons.html">Private Lessons</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
 
-<div class="card">
-<h3>Connect on Social Media</h3>
-<p>Follow my wrestling journey and training updates.</p>
-<p><a href="https://www.instagram.com/domducato/"
-target="_blank" rel="noopener noreferrer">
-Instagram: @DomDucato
-</a></p>
-<p><a href="https://www.linkedin.com/in/domducato"
-target="_blank" rel="noopener noreferrer">
-LinkedIn: Dominic Ducato
-</a></p>
-</div>
-</div>
-</div>
-</section>
+  </header>
 
-<section class="light">
-<div class="container">
-<h2 class="center">Training Inquiry Form</h2>
-<p class="intro center">
-Complete the information below to prepare
-an email to Coach Ducato.
-</p>
+  <main>
 
-<div class="form-box">
-<form id="contactForm">
+    <!-- CONTACT HERO -->
 
-<label for="name">Parent / Contact Name *</label>
-<input type="text" id="name" autocomplete="name" required>
+    <div class="hero">
 
-<label for="email">Email Address *</label>
-<input type="email" id="email" autocomplete="email" required>
+      <h1>
+        CONTACT <span>COACH DUCATO</span>
+      </h1>
 
-<label for="phone">Phone Number (Optional)</label>
-<input type="tel" id="phone" autocomplete="tel">
+      <p>
+        Ready to take your wrestling to the next level?
+        Reach out about private lessons, camps,
+        clinics, and coaching opportunities.
+      </p>
 
-<label for="interest">Training Interest *</label>
-<select id="interest" required>
-<option value="">Select an option</option>
-<option value="1-on-1 Private Lesson">
-1-on-1 Lesson — $80 / 60 Minutes
-</option>
-<option value="Partner Private Lesson">
-Partner Lesson — $100 / 60 Minutes
-</option>
-<option value="Small Group Lesson">
-Small Group — $40 Each / 90 Minutes
-</option>
-<option value="Camps and Clinics">
-Camps & Clinics
-</option>
-<option value="Hosting a Clinic">
-Hosting a Clinic
-</option>
-<option value="Other">
-Other Question
-</option>
-</select>
+    </div>
 
-<label for="location">Preferred Training Area *</label>
-<select id="location" required>
-<option value="">Select an area</option>
-<option value="Mankato, Minnesota">
-Mankato, Minnesota
-</option>
-<option value="Carpentersville, Illinois Area">
-Carpentersville, Illinois Area
-</option>
-<option value="Other">
-Other / Not Sure
-</option>
-</select>
+    <!-- CONTACT INFORMATION -->
 
-<label for="message">Your Message *</label>
-<textarea id="message" maxlength="2000" required
-placeholder="Tell me about your training goals, number of wrestlers, and preferred days or times."></textarea>
+    <section class="center">
 
-<button class="button" type="submit">
-Prepare Email Inquiry
-</button>
+      <div class="container">
 
-<p class="notice">
-This form opens an email draft in your email
-application. Review the information and press
-Send to complete your inquiry.
-</p>
+        <h2>Let's Get to Work</h2>
 
-<p class="notice">
-Parents or guardians should inquire on behalf
-of athletes under 18. Please avoid submitting
-sensitive medical or personal information.
-Submitting an inquiry does not confirm a booking.
-</p>
+        <p class="intro">
+          Whether you're a parent looking for
+          personalized wrestling instruction,
+          a wrestler wanting to improve,
+          or a coach interested in hosting
+          a clinic, I'd love to hear from you.
+        </p>
 
-</form>
-</div>
-</div>
-</section>
+        <div class="cards">
 
-<section class="locations">
-<div class="container">
-<h2>Training Areas</h2>
-<p><strong>Mankato, Minnesota</strong><br>
-Late August – Late April</p>
-<p><strong>Carpentersville, Illinois Area</strong><br>
-Summer Availability</p>
-<p>Exact training facilities are arranged
-when scheduling.</p>
-</div>
-</section>
-</main>
+          <!-- EMAIL -->
 
-<footer class="footer">
-<p>&copy; 2026 Ducato Trained. All Rights Reserved.</p>
-<p>Built on Fundamentals. Driven by Discipline.</p>
-<p>
-<a href="mailto:Dommyd125@gmail.com">Email</a> |
-<a href="https://www.instagram.com/domducato/">Instagram</a> |
-<a href="https://www.linkedin.com/in/domducato">LinkedIn</a>
-</p>
-</footer>
+          <div class="card">
 
-<script>
-document.getElementById("contactForm")
-.addEventListener("submit",function(event){
-  event.preventDefault();
+            <h3>Email Me</h3>
 
-  const name=document.getElementById("name").value;
-  const email=document.getElementById("email").value;
-  const phone=document.getElementById("phone").value;
-  const interest=document.getElementById("interest").value;
-  const location=document.getElementById("location").value;
-  const message=document.getElementById("message").value;
+            <p>
+              Questions about private lessons,
+              camps, clinics, or coaching opportunities?
+            </p>
 
-  const subject="Ducato Trained Inquiry: "+interest;
+            <a href="mailto:Dommyd125@gmail.com">
+              Dommyd125@gmail.com
+            </a>
 
-  const body=
-    "Contact Name: "+name+"\n"+
-    "Email: "+email+"\n"+
-    "Phone: "+(phone||"Not provided")+"\n"+
-    "Training Interest: "+interest+"\n"+
-    "Preferred Area: "+location+"\n\n"+
-    "Message:\n"+message;
+          </div>
 
-  const url="mailto:Dommyd125@gmail.com"+
-    "?subject="+encodeURIComponent(subject)+
-    "&body="+encodeURIComponent(body);
+          <!-- PHONE -->
 
-  window.location.href=url;
-});
-</script>
+          <div class="card">
+
+            <h3>Call or Text</h3>
+
+            <p>
+              Contact me directly about
+              wrestling training opportunities.
+            </p>
+
+            <a href="tel:+18476878871">
+              (847) 687-8871
+            </a>
+
+          </div>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="card">
+
+            <h3>Connect on Social Media</h3>
+
+            <p>
+              Follow my wrestling journey
+              and stay connected for training updates.
+            </p>
+
+            <p>
+              <a
+                href="https://www.instagram.com/domducato/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram: @DomDucato
+              </a>
+            </p>
+
+            <p>
+              <a
+                href="https://www.linkedin.com/in/domducato"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn: Dominic Ducato
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TRAINING INQUIRY FORM -->
+
+    <section class="light">
+
+      <div class="container">
+
+        <h2 class="center">
+          Training Inquiry Form
+        </h2>
+
+        <p class="intro center">
+          Interested in training with Ducato Trained?
+          Complete the form below to prepare
+          an email inquiry to Coach Ducato.
+        </p>
+
+        <div class="form-box">
+
+          <form id="contactForm">
+
+            <!-- NAME -->
+
+            <label for="name">
+              Parent / Contact Name *
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            >
+
+            <!-- EMAIL -->
+
+            <label for="email">
+              Email Address *
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            >
+
+            <!-- PHONE -->
+
+            <label for="phone">
+              Phone Number (Optional)
+            </label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+            >
+
+            <!-- TYPE OF TRAINING -->
+
+            <label for="interest">
+              What Are You Interested In? *
+            </label>
+
+            <select
+              id="interest"
+              name="interest"
+              required
+            >
+
+              <option value="">
+                Select an option
+              </option>
+
+              <option value="1-on-1 Private Lesson">
+                1-on-1 Private Lesson — $80 / 60 Minutes
+              </option>
+
+              <option value="Partner Private Lesson">
+                Partner Lesson — $100 / 60 Minutes
+              </option>
+
+              <option value="Small Group Lesson">
+                Small Group — $40 Each / 90 Minutes
+              </option>
+
+              <option value="Camps and Clinics">
+                Camps & Clinics
+              </option>
+
+              <option value="Hosting a Wrestling Clinic">
+                Hosting a Wrestling Clinic
+              </option>
+
+              <option value="Other Question">
+                Other Question
+              </option>
+
+            </select>
+
+            <!-- TRAINING LOCATION -->
+
+            <label for="location">
+              Preferred Training Area *
+            </label>
+
+            <select
+              id="location"
+              name="location"
+              required
+            >
+
+              <option value="">
+                Select an area
+              </option>
+
+              <option value="Mankato, Minnesota">
+                Mankato, Minnesota
+              </option>
+
+              <option value="Carpentersville, Illinois Area">
+                Carpentersville, Illinois Area
+              </option>
+
+              <option value="Other or Not Sure">
+                Other / Not Sure
+              </option>
+
+            </select>
+
+            <!-- MESSAGE -->
+
+            <label for="message">
+              Your Message *
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              maxlength="2000"
+              placeholder="Tell me about your training goals, number of wrestlers, and preferred days or times."
+              required
+            ></textarea>
+
+            <!-- SEND BUTTON -->
+
+            <button
+              type="submit"
+              class="button"
+            >
+              Prepare Email Inquiry
+            </button>
+
+            <p class="notice">
+              This form prepares an email in your
+              email application. You must review
+              and press Send to complete your inquiry.
+              If the email application does not open,
+              please contact me using the email
+              address listed above.
+            </p>
+
+            <p class="notice">
+              Parents or guardians should submit
+              inquiries on behalf of wrestlers
+              under 18. Please do not include
+              sensitive personal or medical information.
+              Submitting an inquiry does not
+              confirm a training session.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TRAINING LOCATIONS -->
+
+    <section class="locations">
+
+      <div class="container">
+
+        <h2>Training Areas</h2>
+
+        <p>
+          <strong>Mankato, Minnesota</strong>
+          <br>
+          Late August – Late April
+        </p>
+
+        <p>
+          <strong>
+            Carpentersville, Illinois Area
+          </strong>
+          <br>
+          Summer Training Availability
+        </p>
+
+        <p>
+          Exact training facilities and times
+          are arranged when scheduling.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      &copy; 2026 Ducato Trained.
+      All Rights Reserved.
+    </p>
+
+    <p>
+      Built on Fundamentals.
+      Driven by Discipline.
+    </p>
+
+    <p>
+      <a href="mailto:Dommyd125@gmail.com">
+        Email
+      </a>
+
+      |
+
+      <a
+        href="https://www.instagram.com/domducato/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+      |
+
+      <a
+        href="https://www.linkedin.com/in/domducato"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+    </p>
+
+  </footer>
+
+  <!-- EMAIL INQUIRY FUNCTION -->
+
+  <script>
+    document.getElementById("contactForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value;
+
+        const email =
+          document.getElementById("email").value;
+
+        const phone =
+          document.getElementById("phone").value;
+
+        const interest =
+          document.getElementById("interest").value;
+
+        const location =
+          document.getElementById("location").value;
+
+        const message =
+          document.getElementById("message").value;
+
+        const subject =
+          "Ducato Trained Inquiry: " + interest;
+
+        const body =
+          "Contact Name: " + name + "\n" +
+          "Email: " + email + "\n" +
+          "Phone: " +
+            (phone || "Not provided") + "\n" +
+          "Training Interest: " + interest + "\n" +
+          "Preferred Training Area: " + location +
+          "\n\n" +
+          "Message:\n" + message;
+
+        const mailtoLink =
+          "mailto:Dommyd125@gmail.com" +
+          "?subject=" +
+            encodeURIComponent(subject) +
+          "&body=" +
+            encodeURIComponent(body);
+
+        window.location.href = mailtoLink;
+
+      });
+  </script>
+
 </body>
 </html>
