@@ -4,13 +4,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Ducato Trained offers wrestling camps, clinics, and private lessons focused on fundamentals, discipline, confidence, and character.">
+  <meta name="description"
+        content="Ducato Trained offers wrestling camps, clinics, and private lessons focused on fundamentals, discipline, confidence, and character.">
 
-  <title>Ducato Trained | Wrestling Camps & Private Lessons</title>
+  <title>Ducato Trained | Wrestling Training</title>
 
   <style>
+
     :root {
       --navy: #0B1F3A;
       --orange: #F97316;
@@ -29,9 +32,11 @@
       line-height: 1.7;
     }
 
+    /* HEADER */
+
     header {
       background: var(--navy);
-      padding: 14px 7%;
+      padding: 12px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -40,17 +45,22 @@
     }
 
     .brand {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       text-decoration: none;
     }
 
+    /* YOUR ACTUAL DT LOGO */
+
     .site-logo {
-      width: 160px;
-      height: 80px;
-      object-fit: contain;
+      width: 210px;
+      height: auto;
+      max-width: 100%;
       display: block;
+      object-fit: contain;
     }
+
+    /* NAVIGATION */
 
     nav {
       display: flex;
@@ -61,8 +71,8 @@
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
       font-size: 14px;
+      font-weight: bold;
     }
 
     nav a:hover,
@@ -70,11 +80,17 @@
       color: var(--orange);
     }
 
+    /* HOMEPAGE BANNER */
+
     .hero {
-      background: linear-gradient(125deg, #0B1F3A, #1A3B63);
+      background: linear-gradient(
+        125deg,
+        #0B1F3A,
+        #1A3B63
+      );
       color: white;
       text-align: center;
-      padding: 95px 20px;
+      padding: 100px 20px;
     }
 
     .hero h1 {
@@ -94,6 +110,8 @@
       margin: 0 auto 25px;
     }
 
+    /* BUTTONS */
+
     .button {
       display: inline-block;
       background: var(--orange);
@@ -103,10 +121,12 @@
       padding: 14px 27px;
       border-radius: 5px;
       margin: 7px;
+      transition: 0.2s;
     }
 
     .button:hover {
-      filter: brightness(1.1);
+      filter: brightness(1.12);
+      transform: translateY(-2px);
     }
 
     .button-outline {
@@ -114,6 +134,8 @@
       color: white;
       border: 2px solid white;
     }
+
+    /* MAIN SECTIONS */
 
     section {
       padding: 75px 8%;
@@ -141,9 +163,12 @@
       background: var(--light);
     }
 
+    /* TRAINING CARDS */
+
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
       gap: 25px;
       margin-top: 35px;
     }
@@ -167,6 +192,8 @@
       font-weight: bold;
     }
 
+    /* MISSION */
+
     .mission {
       background: var(--navy);
       color: white;
@@ -177,6 +204,8 @@
       margin: auto;
       font-size: 19px;
     }
+
+    /* FOOTER */
 
     footer {
       background: #061327;
@@ -190,15 +219,17 @@
       color: #FFB17D;
     }
 
+    /* MOBILE DESIGN */
+
     @media (max-width: 700px) {
+
       header,
       nav {
         justify-content: center;
       }
 
       .site-logo {
-        width: 145px;
-        height: 75px;
+        width: 180px;
       }
 
       .hero {
@@ -208,30 +239,54 @@
       section {
         padding: 55px 20px;
       }
+
     }
+
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER AND OFFICIAL DT LOGO -->
+  <!-- OFFICIAL LOGO AND NAVIGATION -->
 
   <header>
-    <a href="index.html" class="brand">
+
+    <a href="index.html"
+       class="brand"
+       aria-label="Ducato Trained Home">
+
       <img
         src="ducato-trained-logo.png"
-        alt="Ducato Trained Logo"
+        alt="Ducato Trained official DT logo"
         class="site-logo"
       >
+
     </a>
 
     <nav aria-label="Main navigation">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="camps.html">Camps & Clinics</a>
-      <a href="lessons.html">Private Lessons</a>
-      <a href="contact.html">Contact</a>
+
+      <a href="index.html" class="active">
+        Home
+      </a>
+
+      <a href="about.html">
+        About Me
+      </a>
+
+      <a href="camps.html">
+        Camps & Clinics
+      </a>
+
+      <a href="lessons.html">
+        Private Lessons
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
     </nav>
+
   </header>
 
   <main>
@@ -239,69 +294,100 @@
     <!-- HERO SECTION -->
 
     <div class="hero">
-      <h1>DUCATO <span>TRAINED</span></h1>
 
-      <p>Built on Fundamentals. Driven by Discipline.</p>
+      <h1>
+        DUCATO <span>TRAINED</span>
+      </h1>
 
-      <p>Wrestling Camps • Clinics • Private Lessons</p>
+      <p>
+        Built on Fundamentals.
+        Driven by Discipline.
+      </p>
+
+      <p>
+        Wrestling Camps • Clinics • Private Lessons
+      </p>
 
       <a href="lessons.html" class="button">
         Explore Private Lessons
       </a>
 
-      <a href="camps.html" class="button button-outline">
+      <a href="camps.html"
+         class="button button-outline">
         Camps & Clinics
       </a>
+
     </div>
 
-    <!-- WELCOME SECTION -->
+    <!-- WELCOME -->
 
     <section>
+
       <div class="container">
+
         <h2>Welcome to Ducato Trained</h2>
 
         <p class="intro">
-          Founded by collegiate wrestler and NCAA Division II
-          All-American Dominic Ducato, Ducato Trained is
-          dedicated to developing fundamentally sound,
-          disciplined, and confident wrestlers.
 
-          We believe success means more than winning matches.
-          Our training emphasizes technique, mental toughness,
-          hard work, accountability, and character
+          Founded by collegiate wrestler and NCAA
+          Division II All-American Dominic Ducato,
+          Ducato Trained is dedicated to developing
+          fundamentally sound, disciplined,
+          and confident wrestlers.
+
+          We believe success means more than
+          winning matches.
+
+          Our training emphasizes technique,
+          mental toughness, hard work,
+          accountability, and character
           that lasts a lifetime.
+
         </p>
+
       </div>
+
     </section>
 
     <!-- TRAINING OPPORTUNITIES -->
 
     <section class="light">
+
       <div class="container">
+
         <h2>Training Opportunities</h2>
 
         <p>
-          Personalized wrestling instruction designed
-          to help athletes reach their full potential.
+          Personalized wrestling instruction
+          designed to help athletes
+          reach their full potential.
         </p>
 
         <div class="cards">
 
+          <!-- PRIVATE LESSONS -->
+
           <div class="card">
+
             <h3>Private Lessons</h3>
 
             <p>
               Individual, partner, and small-group
-              instruction focused on improving technique,
-              confidence, and wrestling fundamentals.
+              instruction focused on improving
+              technique, confidence,
+              and wrestling fundamentals.
             </p>
 
             <a href="lessons.html">
               View Lessons & Pricing
             </a>
+
           </div>
 
+          <!-- CAMPS -->
+
           <div class="card">
+
             <h3>Camps & Clinics</h3>
 
             <p>
@@ -314,87 +400,120 @@
             <a href="camps.html">
               Explore Camps
             </a>
+
           </div>
 
+          <!-- ABOUT COACH -->
+
           <div class="card">
+
             <h3>Meet Coach Ducato</h3>
 
             <p>
               Learn about Dominic's collegiate
-              wrestling accomplishments, coaching
-              experience, and philosophy of
-              developing great wrestlers and better people.
+              wrestling accomplishments,
+              coaching experience,
+              and philosophy of developing
+              great wrestlers and better people.
             </p>
 
             <a href="about.html">
               About Coach Ducato
             </a>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
 
     <!-- TRAINING LOCATIONS -->
 
     <section>
+
       <div class="container">
+
         <h2>Training Locations</h2>
 
         <div class="cards">
 
           <div class="card">
+
             <h3>Mankato, Minnesota</h3>
 
-            <p><strong>Late August – Late April</strong></p>
+            <p>
+              <strong>Late August – Late April</strong>
+            </p>
 
             <p>
-              Academic-year wrestling training opportunities
-              in the Mankato area.
+              Academic-year wrestling training
+              opportunities in the Mankato area.
             </p>
+
           </div>
 
           <div class="card">
-            <h3>Carpentersville, Illinois Area</h3>
 
-            <p><strong>Summer Availability</strong></p>
+            <h3>
+              Carpentersville, Illinois Area
+            </h3>
 
             <p>
-              Wrestling instruction around Carpentersville
-              and surrounding communities.
+              <strong>Summer Availability</strong>
+            </p>
+
+            <p>
+              Wrestling instruction around
+              Carpentersville and surrounding
+              communities.
+
               Specific facilities are arranged
               when scheduling.
             </p>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
 
-    <!-- MISSION STATEMENT -->
+    <!-- MISSION -->
 
     <section class="mission">
+
       <div class="container">
+
         <h2>Our Mission</h2>
 
         <p>
-          At Ducato Trained, our mission is to develop
-          disciplined, confident, and fundamentally
-          sound wrestlers while building character,
+
+          At Ducato Trained, our mission is to
+          develop disciplined, confident,
+          and fundamentally sound wrestlers
+          while building character,
           mental toughness, and leadership.
 
-          Through personalized coaching, strong
-          relationships, and a positive team
-          environment, we help athletes succeed
-          on the mat and in life.
+          Through personalized coaching,
+          strong relationships, and a positive
+          team environment, we help athletes
+          succeed on the mat and in life.
+
         </p>
+
       </div>
+
     </section>
 
     <!-- CONTACT -->
 
     <section>
+
       <div class="container">
+
         <h2>Ready to Get Better?</h2>
 
         <p>
@@ -405,7 +524,9 @@
         <a href="contact.html" class="button">
           Contact Coach Ducato
         </a>
+
       </div>
+
     </section>
 
   </main>
@@ -413,18 +534,33 @@
   <!-- FOOTER -->
 
   <footer>
-    <p>&copy; 2026 Ducato Trained. All Rights Reserved.</p>
-
-    <p>Built on Fundamentals. Driven by Discipline.</p>
 
     <p>
+      &copy; 2026 Ducato Trained.
+      All Rights Reserved.
+    </p>
+
+    <p>
+      Built on Fundamentals.
+      Driven by Discipline.
+    </p>
+
+    <p>
+
       <a href="https://www.instagram.com/domducato/"
-         target="_blank" rel="noopener noreferrer">
+         target="_blank"
+         rel="noopener noreferrer">
         Instagram
       </a>
+
       |
-      <a href="contact.html">Contact</a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
     </p>
+
   </footer>
 
 </body>
