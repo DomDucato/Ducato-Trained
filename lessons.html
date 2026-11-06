@@ -5,7 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Private wrestling lessons with Coach Dominic Ducato. Individual, partner, and small-group wrestling training in Minnesota and Illinois.">
+
+  <meta name="description"
+    content="Private wrestling lessons with Coach Dominic Ducato. Individual, partner, and small-group wrestling training in Minnesota and Illinois.">
 
   <title>Private Lessons | Ducato Trained</title>
 
@@ -15,6 +17,7 @@
       --orange: #F97316;
       --light: #F3F5F8;
       --dark: #061327;
+      --white: #FFFFFF;
     }
 
     * {
@@ -31,6 +34,8 @@
     img {
       max-width: 100%;
     }
+
+    /* HEADER */
 
     header {
       background: var(--navy);
@@ -73,8 +78,12 @@
       color: var(--orange);
     }
 
+    /* HERO */
+
     .hero {
-      background: linear-gradient(125deg, #0B1F3A, #1A3B63);
+      background: linear-gradient(
+        125deg, #0B1F3A, #1A3B63
+      );
       color: white;
       text-align: center;
       padding: 85px 20px;
@@ -96,6 +105,8 @@
       max-width: 750px;
       margin: auto;
     }
+
+    /* GENERAL SECTIONS */
 
     section {
       padding: 75px 8%;
@@ -125,6 +136,8 @@
     .light {
       background: var(--light);
     }
+
+    /* LESSON CARDS */
 
     .cards {
       display: grid;
@@ -159,6 +172,8 @@
       color: #526173;
     }
 
+    /* BUTTONS */
+
     .button {
       display: inline-block;
       background: var(--orange);
@@ -172,6 +187,47 @@
 
     .button:hover {
       filter: brightness(1.1);
+    }
+
+    /* ONLINE BOOKING COMING SOON */
+
+    .booking-section {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .booking-box {
+      max-width: 820px;
+      margin: 30px auto 0;
+      padding: 45px 30px;
+      border: 2px solid var(--orange);
+      border-radius: 12px;
+      background: #112C4D;
+    }
+
+    .booking-status {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: bold;
+      padding: 7px 16px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .booking-box h3 {
+      font-size: 30px;
+      margin: 0 0 15px;
+    }
+
+    .booking-box p {
+      font-size: 18px;
+      max-width: 650px;
+      margin: 15px auto;
     }
 
     /* COACHING PHOTO */
@@ -198,6 +254,8 @@
       font-size: 18px;
     }
 
+    /* TRAINING DETAILS */
+
     .details {
       display: grid;
       grid-template-columns:
@@ -218,6 +276,8 @@
       margin-top: 0;
     }
 
+    /* CONTACT SECTION */
+
     .cta {
       background: var(--navy);
       color: white;
@@ -231,6 +291,8 @@
       margin: 25px auto 0;
     }
 
+    /* FOOTER */
+
     footer {
       background: var(--dark);
       color: white;
@@ -242,6 +304,8 @@
     footer a {
       color: #FFB17D;
     }
+
+    /* MOBILE */
 
     @media (max-width: 800px) {
 
@@ -270,6 +334,10 @@
       .coaching-photo {
         max-height: none;
       }
+
+      .booking-box {
+        padding: 30px 20px;
+      }
     }
   </style>
 </head>
@@ -281,7 +349,6 @@
   <header>
 
     <a href="index.html" class="brand">
-
       <img
         src="ducato-trained-logo.png"
         alt="Ducato Trained Logo"
@@ -289,7 +356,6 @@
         width="185"
         height="105"
       >
-
     </a>
 
     <nav aria-label="Main navigation">
@@ -341,7 +407,7 @@
 
     </section>
 
-    <!-- PRICING -->
+    <!-- LESSON PACKAGES -->
 
     <section class="light">
 
@@ -458,7 +524,55 @@
 
     </section>
 
-    <!-- NEW CLEAR COACHING PHOTO -->
+    <!-- ONLINE BOOKING COMING SOON -->
+
+    <section class="booking-section" id="booking">
+
+      <div class="container">
+
+        <h2>Online Booking</h2>
+
+        <div class="booking-box">
+
+          <div class="booking-status">
+            Coming Soon
+          </div>
+
+          <h3>
+            Online Lesson Scheduling Is Coming!
+          </h3>
+
+          <p>
+            Ducato Trained is preparing a
+            convenient online booking system
+            for private wrestling lessons.
+          </p>
+
+          <p>
+            Soon, parents and wrestlers will
+            be able to view available dates
+            and times, choose a lesson package,
+            and request a training session
+            directly through this website.
+          </p>
+
+          <p>
+            Online booking is not available yet,
+            but you can still contact Coach Ducato
+            with questions or lesson inquiries.
+          </p>
+
+          <a href="contact.html" class="button">
+            Contact Coach Ducato
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- COACHING PHOTO -->
 
     <section>
 
@@ -522,7 +636,7 @@
 
     </section>
 
-    <!-- LOCATIONS -->
+    <!-- TRAINING LOCATIONS -->
 
     <section class="light">
 
@@ -546,8 +660,9 @@
             <p><strong>Late August – Late April</strong></p>
 
             <p>
-              Academic-year private lesson
-              availability in the Mankato area.
+              Training at Taylor Center Wrestling Room,
+              Minnesota State University, Mankato,
+              subject to facility availability.
             </p>
 
           </div>
@@ -566,9 +681,21 @@
               30–60 minutes of the area.
             </p>
 
+            <p>
+              Illinois training locations
+              will be confirmed individually.
+            </p>
+
           </div>
 
         </div>
+
+        <p>
+          At-home lessons may also be available
+          depending on travel distance,
+          appropriate training space,
+          and coach approval.
+        </p>
 
       </div>
 
@@ -627,7 +754,7 @@
 
     </section>
 
-    <!-- CONTACT -->
+    <!-- FINAL CONTACT SECTION -->
 
     <section class="cta">
 
